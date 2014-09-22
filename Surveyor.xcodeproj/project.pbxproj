@@ -405,6 +405,7 @@
 				F72980E319CFB77600B3FE89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F72980E419CFB77600B3FE89 /* Build configuration list for PBXNativeTarget "SurveyorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				F72980E619CFB77600B3FE89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
