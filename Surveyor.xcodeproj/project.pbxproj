@@ -77,11 +77,10 @@
 		F72980C419CFB77600B3FE89 /* Surveyor */ = {
 			isa = PBXGroup;
 			children = (
-				F72980C719CFB77600B3FE89 /* AppDelegate.swift */,
-				F72980C919CFB77600B3FE89 /* ViewController.swift */,
+				F72980D019CFB77600B3FE89 /* LaunchScreen.xib */,
 				F72980CB19CFB77600B3FE89 /* Main.storyboard */,
 				F72980CE19CFB77600B3FE89 /* Images.xcassets */,
-				F72980D019CFB77600B3FE89 /* LaunchScreen.xib */,
+				F72980C919CFB77600B3FE89 /* ViewController.swift */,
 				F72980C519CFB77600B3FE89 /* Supporting Files */,
 			);
 			path = Surveyor;
@@ -90,6 +89,7 @@
 		F72980C519CFB77600B3FE89 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F72980C719CFB77600B3FE89 /* AppDelegate.swift */,
 				F72980C619CFB77600B3FE89 /* Info.plist */,
 			);
 			name = "Supporting Files";
