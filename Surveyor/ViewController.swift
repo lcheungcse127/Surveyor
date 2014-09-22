@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             self.captureSession.addInput(deviceInput)
         }
 
-        // Create the preview layer and add it to the view that displays the camera image.
+        // Create the camera preview layer and add it to the view that displays the camera image.
         self.cameraPreview = AVCaptureVideoPreviewLayer(session: self.captureSession)
         self.cameraView.layer.addSublayer(self.cameraPreview)
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        // Configure the preview layer.
+        // Configure the camera preview layer.
         self.cameraPreview.videoGravity = AVLayerVideoGravityResizeAspectFill
         self.cameraPreview.frame = CGRect(x: 0, y: 0, width: self.cameraView.frame.size.width,
             height: self.cameraView.frame.size.height)

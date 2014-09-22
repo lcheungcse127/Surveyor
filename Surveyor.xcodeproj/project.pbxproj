@@ -13,6 +13,7 @@
 		F72980CF19CFB77600B3FE89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72980CE19CFB77600B3FE89 /* Images.xcassets */; };
 		F72980D219CFB77600B3FE89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72980D019CFB77600B3FE89 /* LaunchScreen.xib */; };
 		F72980DE19CFB77600B3FE89 /* SurveyorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72980DD19CFB77600B3FE89 /* SurveyorTests.swift */; };
+		F7B9ABC819D02A9900F01C59 /* Crosshair.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9ABC719D02A9900F01C59 /* Crosshair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F72980D719CFB77600B3FE89 /* SurveyorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72980DC19CFB77600B3FE89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72980DD19CFB77600B3FE89 /* SurveyorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyorTests.swift; sourceTree = "<group>"; };
+		F7B9ABC719D02A9900F01C59 /* Crosshair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crosshair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F72980D019CFB77600B3FE89 /* LaunchScreen.xib */,
 				F72980CB19CFB77600B3FE89 /* Main.storyboard */,
 				F72980CE19CFB77600B3FE89 /* Images.xcassets */,
+				F7B9ABC719D02A9900F01C59 /* Crosshair.swift */,
 				F72980C919CFB77600B3FE89 /* ViewController.swift */,
 				F72980C519CFB77600B3FE89 /* Supporting Files */,
 			);
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B9ABC819D02A9900F01C59 /* Crosshair.swift in Sources */,
 				F72980CA19CFB77600B3FE89 /* ViewController.swift in Sources */,
 				F72980C819CFB77600B3FE89 /* AppDelegate.swift in Sources */,
 			);
