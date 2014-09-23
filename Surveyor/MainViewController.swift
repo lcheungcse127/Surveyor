@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Surveyor
 //
 //  Created by Louis Cheung on 9/21/14.
@@ -10,7 +10,7 @@ import AVFoundation
 import CoreMotion
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var cameraView: UIView!
 

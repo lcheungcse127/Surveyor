@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F4AA4E72E774B8AA4B8A9E7 /* libPods-Surveyor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9830A4ED083947F0ADA372D7 /* libPods-Surveyor.a */; };
+		F726DB8019D214FF0090CA13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F726DB7F19D214FF0090CA13 /* MapViewController.swift */; };
 		F72980C819CFB77600B3FE89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72980C719CFB77600B3FE89 /* AppDelegate.swift */; };
-		F72980CA19CFB77600B3FE89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72980C919CFB77600B3FE89 /* ViewController.swift */; };
+		F72980CA19CFB77600B3FE89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72980C919CFB77600B3FE89 /* MainViewController.swift */; };
 		F72980CD19CFB77600B3FE89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72980CB19CFB77600B3FE89 /* Main.storyboard */; };
 		F72980CF19CFB77600B3FE89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72980CE19CFB77600B3FE89 /* Images.xcassets */; };
 		F72980D219CFB77600B3FE89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72980D019CFB77600B3FE89 /* LaunchScreen.xib */; };
@@ -31,10 +32,11 @@
 /* Begin PBXFileReference section */
 		9830A4ED083947F0ADA372D7 /* libPods-Surveyor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Surveyor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FACDABE6CE4AD09677B81A /* Pods-Surveyor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surveyor.xcconfig"; path = "Pods/Pods-Surveyor.xcconfig"; sourceTree = "<group>"; };
+		F726DB7F19D214FF0090CA13 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F72980C219CFB77600B3FE89 /* Surveyor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surveyor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72980C619CFB77600B3FE89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72980C719CFB77600B3FE89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F72980C919CFB77600B3FE89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72980C919CFB77600B3FE89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F72980CC19CFB77600B3FE89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72980CE19CFB77600B3FE89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F72980D119CFB77600B3FE89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -101,7 +103,8 @@
 				F72980CB19CFB77600B3FE89 /* Main.storyboard */,
 				F72980CE19CFB77600B3FE89 /* Images.xcassets */,
 				F7B9ABC719D02A9900F01C59 /* Crosshair.swift */,
-				F72980C919CFB77600B3FE89 /* ViewController.swift */,
+				F72980C919CFB77600B3FE89 /* MainViewController.swift */,
+				F726DB7F19D214FF0090CA13 /* MapViewController.swift */,
 				F72980C519CFB77600B3FE89 /* Supporting Files */,
 			);
 			path = Surveyor;
@@ -269,8 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B9ABC819D02A9900F01C59 /* Crosshair.swift in Sources */,
-				F72980CA19CFB77600B3FE89 /* ViewController.swift in Sources */,
+				F72980CA19CFB77600B3FE89 /* MainViewController.swift in Sources */,
 				F72980C819CFB77600B3FE89 /* AppDelegate.swift in Sources */,
+				F726DB8019D214FF0090CA13 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Surveyor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" customModule="Surveyor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -35,17 +35,8 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-ta-QlQ" userLabel="Container View" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="240" width="600" height="360"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-PX-nPq">
-                                        <rect key="frame" x="388" y="154" width="40" height="30"/>
-                                        <state key="normal" title="Reset">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="touchResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0sj-2q-gkn"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Angle 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixf-Az-2rG">
-                                        <rect key="frame" x="180" y="78" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="78" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="qyR-e5-xIt"/>
                                         </constraints>
@@ -53,7 +44,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-z2-phD">
-                                        <rect key="frame" x="180" y="154" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="154" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="gtx-ps-LqJ"/>
                                         </constraints>
@@ -61,7 +52,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Distance" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROn-xm-YSg">
-                                        <rect key="frame" x="180" y="116" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="116" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="txV-aw-Shu"/>
                                         </constraints>
@@ -69,7 +60,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Angle 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-tw-dXL">
-                                        <rect key="frame" x="180" y="40" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="40" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="Jks-Je-dw4"/>
                                         </constraints>
@@ -77,7 +68,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-qX-f4y">
-                                        <rect key="frame" x="388" y="116" width="32" height="30"/>
+                                        <rect key="frame" x="408" y="116" width="32" height="30"/>
                                         <state key="normal" title="GPS">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -95,24 +86,41 @@
                                             <action selector="touchCaptureAngleButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="858-qY-nQz"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-PX-nPq">
+                                        <rect key="frame" x="152" y="116" width="40" height="30"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0sj-2q-gkn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ROn-xm-YSg" firstAttribute="top" secondItem="ixf-Az-2rG" secondAttribute="bottom" constant="8" id="7Ta-yf-Nki"/>
                                     <constraint firstItem="7yR-qX-f4y" firstAttribute="leading" secondItem="ROn-xm-YSg" secondAttribute="trailing" constant="8" id="I4n-kV-gsO"/>
-                                    <constraint firstAttribute="centerX" secondItem="ixf-Az-2rG" secondAttribute="centerX" constant="20" id="O3g-OF-zM0"/>
+                                    <constraint firstItem="ROn-xm-YSg" firstAttribute="leading" secondItem="iIW-PX-nPq" secondAttribute="trailing" constant="8" id="Ka4-Hc-2De"/>
+                                    <constraint firstAttribute="centerX" secondItem="ixf-Az-2rG" secondAttribute="centerX" id="O3g-OF-zM0"/>
                                     <constraint firstItem="ixf-Az-2rG" firstAttribute="top" secondItem="JBK-tw-dXL" secondAttribute="bottom" constant="8" id="Q9l-wJ-3mR"/>
                                     <constraint firstItem="JBK-tw-dXL" firstAttribute="top" secondItem="HSc-ta-QlQ" secondAttribute="top" constant="40" id="Vvo-tm-uSD"/>
                                     <constraint firstItem="7yR-qX-f4y" firstAttribute="centerY" secondItem="ROn-xm-YSg" secondAttribute="centerY" id="Xgg-7k-PXv"/>
                                     <constraint firstItem="iIW-PX-nPq" firstAttribute="centerY" secondItem="nfK-z2-phD" secondAttribute="centerY" id="anB-Ba-7DL"/>
-                                    <constraint firstAttribute="centerX" secondItem="JBK-tw-dXL" secondAttribute="centerX" constant="20" id="bER-J6-GPm"/>
-                                    <constraint firstAttribute="centerX" secondItem="ROn-xm-YSg" secondAttribute="centerX" constant="20" id="bqV-vK-wzG"/>
+                                    <constraint firstAttribute="centerX" secondItem="JBK-tw-dXL" secondAttribute="centerX" id="bER-J6-GPm"/>
+                                    <constraint firstItem="iIW-PX-nPq" firstAttribute="centerY" secondItem="ROn-xm-YSg" secondAttribute="centerY" id="bec-qF-ub7"/>
+                                    <constraint firstAttribute="centerX" secondItem="ROn-xm-YSg" secondAttribute="centerX" id="bqV-vK-wzG"/>
                                     <constraint firstAttribute="centerX" secondItem="LKz-yT-eWI" secondAttribute="centerX" id="gn2-Fb-COr"/>
                                     <constraint firstItem="LKz-yT-eWI" firstAttribute="top" secondItem="nfK-z2-phD" secondAttribute="bottom" constant="20" id="iaV-37-9Bm"/>
                                     <constraint firstItem="nfK-z2-phD" firstAttribute="top" secondItem="ROn-xm-YSg" secondAttribute="bottom" constant="8" id="j0J-fE-AQg"/>
-                                    <constraint firstAttribute="centerX" secondItem="nfK-z2-phD" secondAttribute="centerX" constant="20" id="nR1-kb-NXU"/>
+                                    <constraint firstAttribute="centerX" secondItem="nfK-z2-phD" secondAttribute="centerX" id="nR1-kb-NXU"/>
                                     <constraint firstItem="iIW-PX-nPq" firstAttribute="leading" secondItem="nfK-z2-phD" secondAttribute="trailing" constant="8" id="xNB-Kl-ovQ"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="anB-Ba-7DL"/>
+                                        <exclude reference="xNB-Kl-ovQ"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -143,7 +151,7 @@
         <!--Title-->
         <scene sceneID="7Ch-K4-hBB">
             <objects>
-                <viewController id="u0Z-tm-tQV" sceneMemberID="viewController">
+                <viewController id="u0Z-tm-tQV" customClass="MapViewController" customModule="Surveyor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KBK-Eb-62M"/>
                         <viewControllerLayoutGuide type="bottom" id="VDR-Ql-PsP"/>
@@ -182,6 +190,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="4Rg-Tf-X5H"/>
+                    <connections>
+                        <outlet property="mapView" destination="dMz-po-f8B" id="C5C-Hg-mdL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2f-XS-f1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="1jt-6V-miR" userLabel="Exit" sceneMemberID="exit"/>
