@@ -68,7 +68,10 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-qX-f4y">
-                                        <rect key="frame" x="408" y="116" width="32" height="30"/>
+                                        <rect key="frame" x="408" y="111" width="32" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Y8d-1u-HYu"/>
+                                        </constraints>
                                         <state key="normal" title="GPS">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -78,7 +81,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKz-yT-eWI">
-                                        <rect key="frame" x="251" y="204" width="98" height="30"/>
+                                        <rect key="frame" x="251" y="204" width="98" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wyk-ZB-Zgg"/>
+                                        </constraints>
                                         <state key="normal" title="Capture Angle">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -87,7 +93,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-PX-nPq">
-                                        <rect key="frame" x="152" y="116" width="40" height="30"/>
+                                        <rect key="frame" x="152" y="111" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="A6w-Yj-ebU"/>
+                                        </constraints>
                                         <state key="normal" title="Reset">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -99,8 +108,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ROn-xm-YSg" firstAttribute="top" secondItem="ixf-Az-2rG" secondAttribute="bottom" constant="8" id="7Ta-yf-Nki"/>
-                                    <constraint firstItem="7yR-qX-f4y" firstAttribute="leading" secondItem="ROn-xm-YSg" secondAttribute="trailing" constant="8" id="I4n-kV-gsO"/>
                                     <constraint firstItem="ROn-xm-YSg" firstAttribute="leading" secondItem="iIW-PX-nPq" secondAttribute="trailing" constant="8" id="Ka4-Hc-2De"/>
+                                    <constraint firstItem="7yR-qX-f4y" firstAttribute="leading" secondItem="ROn-xm-YSg" secondAttribute="trailing" constant="8" id="MJR-MP-nCX"/>
                                     <constraint firstAttribute="centerX" secondItem="ixf-Az-2rG" secondAttribute="centerX" id="O3g-OF-zM0"/>
                                     <constraint firstItem="ixf-Az-2rG" firstAttribute="top" secondItem="JBK-tw-dXL" secondAttribute="bottom" constant="8" id="Q9l-wJ-3mR"/>
                                     <constraint firstItem="JBK-tw-dXL" firstAttribute="top" secondItem="HSc-ta-QlQ" secondAttribute="top" constant="40" id="Vvo-tm-uSD"/>
