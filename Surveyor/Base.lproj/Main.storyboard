@@ -25,17 +25,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCX-EK-Ign" customClass="Crosshair" customModule="Surveyor" customModuleProvider="target">
-                                <rect key="frame" x="16" y="240" width="568" height="360"/>
+                                <rect key="frame" x="280" y="100" width="40" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UQf-Uu-qP4"/>
+                                    <constraint firstAttribute="width" constant="40" id="j6y-jy-c87"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Bxf-du-riE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="3SJ-Ge-4E0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vCX-EK-Ign" secondAttribute="trailing" id="4OQ-Wg-Unf"/>
-                            <constraint firstItem="vCX-EK-Ign" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DSC-3s-lSr"/>
-                            <constraint firstItem="vCX-EK-Ign" firstAttribute="top" secondItem="Bxf-du-riE" secondAttribute="bottom" id="GFW-OZ-XWQ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vCX-EK-Ign" secondAttribute="bottom" id="ciX-lT-mC9"/>
+                            <constraint firstAttribute="centerX" secondItem="vCX-EK-Ign" secondAttribute="centerX" id="9Te-4z-GmL"/>
+                            <constraint firstItem="Bxf-du-riE" firstAttribute="centerY" secondItem="vCX-EK-Ign" secondAttribute="centerY" id="LVg-YU-Czb"/>
                             <constraint firstItem="Bxf-du-riE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="hUi-Nq-RYq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bxf-du-riE" secondAttribute="trailing" constant="-16" id="jrd-f5-vzm"/>
                         </constraints>

@@ -10,7 +10,19 @@ import UIKit
 
 class Crosshair: UIView {
 
-    var bezierPath: UIBezierPath?
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.baseInit()
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.baseInit()
+    }
+
+    func baseInit() {
+        self.backgroundColor = UIColor.clearColor()
+    }
 
     override func drawRect(rect: CGRect) {
         let path = UIBezierPath()
@@ -19,8 +31,7 @@ class Crosshair: UIView {
         path.moveToPoint(CGPoint(x: 0, y: self.frame.size.height))
         path.addLineToPoint(CGPoint(x: self.frame.size.width, y: 0))
 
-        path.lineWidth = 5
-        UIColor.blackColor().setStroke()
+        UIColor.whiteColor().setStroke()
         path.stroke()
     }
 }

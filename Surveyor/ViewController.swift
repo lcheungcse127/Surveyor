@@ -51,4 +51,11 @@ class ViewController: UIViewController {
         self.cameraPreview.frame = CGRect(x: 0, y: 0, width: self.cameraView.frame.size.width,
             height: self.cameraView.frame.size.height)
     }
+
+// ---------------------------------------------------------------------------------------------- MARK: - User Interface
+
+    // Make the status bar light to stand out over the camera preview.
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
