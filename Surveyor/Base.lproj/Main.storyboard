@@ -40,12 +40,18 @@
                                         <state key="normal" title="Capture Angle">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchCaptureAngleButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="858-qY-nQz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-PX-nPq">
                                         <rect key="frame" x="280" y="192" width="40" height="30"/>
                                         <state key="normal" title="Reset">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0sj-2q-gkn"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Angle 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixf-Az-2rG">
                                         <rect key="frame" x="200" y="78" width="200" height="30"/>
@@ -84,6 +90,9 @@
                                         <state key="normal" title="GPS">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchGpsButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0MU-Xh-jLp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,7 +128,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="angle1TextField" destination="JBK-tw-dXL" id="Juu-6t-PXZ"/>
+                        <outlet property="angle2TextField" destination="ixf-Az-2rG" id="L5F-lX-QXS"/>
                         <outlet property="cameraView" destination="Bxf-du-riE" id="tZC-oc-Aog"/>
+                        <outlet property="distanceTextField" destination="ROn-xm-YSg" id="k3d-kG-vE8"/>
+                        <outlet property="heightTextField" destination="nfK-z2-phD" id="yc4-Z0-mhs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

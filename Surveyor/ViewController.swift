@@ -12,7 +12,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var cameraView: UIView!
-    
+
+    @IBOutlet weak var angle1TextField: UITextField!
+    @IBOutlet weak var angle2TextField: UITextField!
+    @IBOutlet weak var distanceTextField: UITextField!
+    @IBOutlet weak var heightTextField: UITextField!
+
     var captureSession: AVCaptureSession!
     var cameraPreview: AVCaptureVideoPreviewLayer!
 
@@ -57,5 +62,19 @@ class ViewController: UIViewController {
     // Make the status bar light to stand out over the camera preview.
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+
+// ----------------------------------------------------------------------------------------------- MARK: - Target Action
+
+    @IBAction func touchGpsButton(sender: UIButton) {
+        
+    }
+
+    @IBAction func touchResetButton(sender: UIButton) {
+
+    }
+
+    @IBAction func touchCaptureAngleButton(sender: UIButton) {
+
     }
 }
