@@ -39,6 +39,12 @@ class ViewController: UIViewController {
             height: self.cameraView.frame.size.height)
     }
 
+// ------------------------------------------------------------------------------------------------------- MARK: - Segue
+
+    @IBAction func unwindBackToViewController(segue: UIStoryboardSegue) {
+
+    }
+
 // ---------------------------------------------------------------------------------------------- MARK: - User Interface
 
     // Make the status bar light to stand out over the camera preview.
